@@ -1,0 +1,213 @@
+@charset "UTF-8";
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.payfee1{
+		font-size: 20px;
+	}
+	.icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+	.pc_show{
+		display:none;
+		width: 1280px;
+		position: relative;
+		overflow: hidden;
+		height: 100%;
+		margin:10px auto;
+		padding-left: 89px;
+	}
+	.mob_show{
+		display: none;
+	}
+	body{
+		background: #f8fafc;
+	}
+	ul li{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	em{
+		font-style: normal;
+	}
+	.clearfix:after {
+	    content: '\0020';
+	    display: block;
+	    height: 0;
+	    clear: both;
+	    visibility: hidden;
+	}
+	.imv2-check{
+	    font-size: 16px;
+	    color:#fff;
+	    margin-left: -13px;
+	    margin-top: 7px;
+	}
+	.cart-body .pay-method .bottomright {
+	    width: 20px;
+	    height: 20px;
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	}
+	.cart-body .pay-method .triangle {
+	    width: 0;
+	    height: 0;
+	    border-bottom: 20px solid red;
+	    border-left: 20px solid transparent;
+	    display:none;
+	}
+	.cart-body .pay-method .bottomright i {
+	    position: absolute;
+	    right: 2px;
+	    bottom: 0;
+	    color: #fff;
+	    font-size: 12px;
+	}
+	.cart-body {
+		position: absolute;
+		top:0;
+		right:234px;
+	    width: 650px;
+	    padding: 0 36px 32px;
+	    background-color: #fff;
+	    margin-top: 60px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    box-shadow: 1px 0px 19px 7px rgba(7,17,27,.1);
+	    border-radius: 8px;
+	    box-sizing: border-box;
+	}
+	.item {
+		position: relative;
+	}
+	.item-left{
+		text-indent: 20px;
+	}
+	.item-right{
+		position: absolute;
+		right:20px;
+		bottom:20px;
+	}
+	.cart-body .right{
+		float: right;
+	}
+	.cart-body .cart-body-title {
+	    min-height: 88px;
+	    
+	    border-bottom: 1px solid #b7bbbf;
+	    box-sizing: border-box;
+	}
+	.cart-body .cart-body-title .trade-title {
+		padding: 20px 0 0 0;
+		text-align: left;
+	    height: 46px;
+	    line-height: 30px;
+	    font-size: 16px;
+	    color: #07111b;
+	}
+	.payinfo{
+		color:#333;
+	}
+	.cart-body .item {
+	    height: 88px;
+	    margin:12px;
+	    padding: 12px;
+	    background-color:#e6eaef; /* #f3f5f7 */
+	    border-bottom: 2px solid #fff;
+	}
+	.cart-body .pay-method {
+	    padding: 30px 0px 48px;
+	    margin-bottom: 20px;
+	    border-bottom: 1px solid #d9dde1;
+	}
+	.cart-body .pay-method .pay-method-title {
+	    height: 46px;
+	    line-height: 30px;
+	    font-size: 16px;
+	    color: #07111b;
+	}
+	.cart-body .pay-method .alipay {
+	    background-position: 55px -304px;
+	    background-repeat: no-repeat;
+	}
+	.cart-body .pay-method .wxpay {
+	    background-position: 48px -423px;
+	    background-repeat: no-repeat;
+	}
+	.js-pay-method{
+		width: 530px;
+		margin: 0 auto;
+	}
+	.pay-method li {
+	    float: left;
+	    margin-right: 25px;
+	    position: relative;
+	    width: 236px;
+	    height: 86px;
+	    background-color: #f3f5f7;
+	    border: 2px solid #f3f5f7;
+	    cursor: pointer;
+	    background-image: url('../img/pay_s.png');
+	}
+	.cart-body .pay-method .pay-way.active {
+	    border-color: #f01414;
+	}
+	.cart-body .pay-method .alipay {
+	    background-position: 55px -304px;
+	    background-repeat: no-repeat;
+	}
+	.cart-body .pay-summary .summary {
+	    float: right;
+	    padding-top: 36px;
+	}
+	.cart-body .pay-summary .total {
+	    height: 24px;
+	}
+	.cart-body .pay-summary .label {
+	    width: 96px;
+	    font-size: 14px;
+	    color: #07111b;
+	    height: 20px;
+	    text-align: right;
+	    float: left;
+	    line-height: 20px;
+	}
+	.cart-body .pay-summary .price {
+	    font-size: 14px;
+	    color: #f01414;
+	    height: 20px;
+	    text-align: right;
+	    line-height: 20px;
+	    float: left;
+	}
+	.cart-body .pay-summary .total .price {
+	    font-size: 24px;
+	    line-height: 24px;
+	    height: 24px;
+	}
+	.cart-body .pay-summary .submit-warp {
+	    margin-top: 32px;
+	}
+	.cart-body .pay-summary .total .label {
+	    line-height: 26px;
+	}
+	.cart-body .pay-summary .pay-summary-submit {
+	    float: right;
+	    width: 140px;
+	    height: 40px;
+	    font-size: 14px;
+	    font-weight: 700;
+	    color: #fff;
+	    background-color: #f01414;
+	    border-radius: 2px;
+	    text-align: center;
+	    line-height: 40px;
+	    cursor: pointer;
+	}

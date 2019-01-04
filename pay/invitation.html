@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>邀请函</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_746810_l8b3yijvfo.css">
+</head>
+<style>
+    body {
+        background: -webkit-linear-gradient(#6389df, #2e87d7);
+        /* Safari 5.1 - 6.0 */
+        background: -o-linear-gradient(#6389df, #2e87d7);
+        /* Opera 11.1 - 12.0 */
+        background: -moz-linear-gradient(#6389df, #2e87d7);
+        /* Firefox 3.6 - 15 */
+        background: linear-gradient(to bottom, #6389df 0, #2e87d7 100%);
+        /* 标准的语法（必须放在最后） */
+    }
+    
+    .box a {
+        margin-top: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .box h3 {
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    
+    .pay-suc {
+        font-size: 25px;
+        color: #09c609;
+        margin-right: 10px;
+        position: relative;
+        top: 1px;
+    }
+    
+    .pic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+    
+    .all-box {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .share {
+        padding: 20px;
+        /*background-color: #0048ea;*/
+    }
+    
+    .share-box {
+        background-color: #fff;
+        padding: 10px 10px 15px;
+    }
+    
+    .share-btn {
+        position: relative;
+        background-color: #5b64e3;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 10px;
+        margin-top: 15px;
+    }
+    
+    .content {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+    
+    .content p {
+        font-size: 17px;
+        color: #3a58bb;
+        text-align: center;
+        font-weight: 600;
+        padding-top: 10px;
+    }
+    
+    .logo {
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    
+    .box>p {
+        margin-top: 15px;
+        color: #363636;
+        font-size: 16px;
+    }
+    
+    .pay {
+        background-color: #f6f6f6;
+        border-radius: 4px;
+        padding: 15px 10px 10px;
+    }
+    
+    .pay p {
+        font-size: 15px;
+        color: #666;
+    }
+    
+    .pay p.weixin {
+        color: #222;
+        line-height: 20px;
+    }
+    
+    .line {
+        border: 1px solid #e8e7e7;
+    }
+    
+    .money {
+        margin-top: 8px;
+    }
+    
+    .money span {
+        float: right;
+        position: relative;
+        top: -30px;
+        color: red;
+    }
+    
+    .money p.order {
+        margin-top: 10px;
+    }
+    
+    .pay-logo {
+        font-size: 25px;
+        color: #09c609;
+        margin-right: 10px;
+    }
+    
+    .pay-name {
+        position: relative;
+        top: -5px;
+    }
+    
+    .img-responsive {
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <div class="container all-box">
+        <div class="share">
+            <div class="share-box">
+                <div class="box">
+                    <h3><span class="iconfont icon-duigou pay-suc"></span>支付成功</h3>
+                    <div class="logo">
+                        <img class="img-responsive" src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-class/activity/2018MAC/MacBanner.jpg" alt="">
+                    </div>
+                    <p id="classInfo">国际学校市场招生</p>
+                    <div class="pay">
+                        <p class="method">支付方式</p>
+                        <p class="weixin"><span class="iconfont icon-weixin2 pay-logo"></span><span class="pay-name">微信支付</span></p>
+                        <div class="line"></div>
+                        <div class="money">
+                            <p class="order">订单金额</p><span class="price">00.00</span>
+                            <p>实付金额</p><span class="price">00.00</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="content">
+                <p>点击右上角分享给好友，每成功邀请一位，可获得学费10%的赏金哦</p>
+                <div style="padding: 0 10px"><button class="btn btn-block animated pulse infinite share-btn" id="btn">分享</button></div>
+            </div>
+            <div class="pic">
+                <p style="margin-bottom: 0" class="text-right"><img src="static/img/arrow.png" alt="" class="img-responsive"></p>
+                <p><img src="static/img/card.png" alt="" class="img-responsive"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- 微信分享 -->
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+<script>
+    $(function() {
+        $(".pic").click(function() {
+            $(this).hide()
+        })
+        $("#btn").click(function() {
+            $(".pic").show();
+        })
+        var height = $(window).height(),
+            picHeight = $(document).height()
+        $(document.body).css("min-height", height)
+        $(".pic").css("height", picHeight)
+        var storage = window.localStorage,
+            user = storage.email,
+            // user = '313121@qq.com',
+            user = user.replace('@', '*'),
+            shareHref = "http://data.xinxueshuo.cn/nsi-class/admin/activity/courseDesc/macM.html?Tcode=" + user
+
+            // console.log(user)
+            // shareHref = "http://www.baidu.com",
+            
+
+        // 内容填充
+        $('.price').text(storage.fee)
+        $('#classInfo').text(storage.shoppingInfo)
+
+        //微信分享
+        /**去掉字符串前后所有空格*/
+        function trim(str) {
+            return str.replace(/(^\s*)|(\s*$)/g, "");
+        }
+
+        setTimeout(function() {
+            // 微信配置
+            var href = shareHref;
+            // var pos = href.indexOf("from=")
+            // href = href.substring(0, pos - 1)
+
+            var title = '新学说国际教育研究院-国际学校市场招生,大学升学';
+            var desc = '国际教育研究院在线课堂，人力资源，市场招生，大学升学课程全面起航';
+            var imgUrl = 'https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-class/activity/2018MAC/banner.jpg';
+
+            $.ajax({
+                type: "get",
+                async: true,
+                traditional: true,
+                data: {
+                    URL: href
+                }, //提交的参数
+                url: 'http://data.xinxueshuo.cn/nsi-0.9/Admin_api?whereFrom=WeChatShare',
+                dataType: "jsonp", //数据类型为jsonp??
+                jsonp: "Callback", //服务端用于接收callback调用的function名的参数??
+                success: function(msg) {
+                    // console.log(msg)
+                    wx.config({
+
+                        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+
+                        appId: msg.appId, // 必填，公众号的唯一标识
+
+                        timestamp: msg.timestamp, // 必填，生成签名的时间戳
+
+                        nonceStr: msg.nonceStr, // 必填，生成签名的随机串
+
+                        signature: msg.signature, // 必填，签名，见附录1
+
+                        jsApiList: ['onMenuShareAppMessage', 'onMenuShareTimeline'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+
+                    });
+
+                    wx.ready(function() {
+
+                        // config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中。
+                        // 分享给朋友
+                        wx.onMenuShareAppMessage({
+
+                            title: title, // 分享标题
+
+                            desc: desc, // 分享描述
+
+                            link: href, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+
+                            imgUrl: imgUrl, // 分享图标
+
+                            type: '', // 分享类型,music、video或link，不填默认为link
+
+                            dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+
+                            success: function() {
+                                // 用户确认分享后执行的回调函数
+
+                            },
+                            cancel: function() {
+                                // 用户取消分享后执行的回调函数
+                            }
+                        });
+
+                        // 分享到朋友圈
+                        wx.onMenuShareTimeline({
+
+                            title: title, // 分享标题
+
+                            link: href, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+
+                            imgUrl: imgUrl, // 分享图标
+
+                            success: function() {
+
+                                // 用户确认分享后执行的回调函数
+
+                            },
+                            cancel: function() {
+                                // 用户取消分享后执行的回调函数
+                            }
+                        });
+                    });
+                    // 处理失败验证
+                    wx.error(function(res) {
+                        // config信息验证失败会执行error函数，如签名过期导致验证失败，具体错误信息可以打开config的debug模式查看，也可以在返回的res参数中查看，对于SPA可以在这里更新签名。
+                    });
+                    wx.checkJsApi({
+
+                        jsApiList: ['chooseImage'], // 需要检测的JS接口列表，所有JS接口列表见附录2,
+
+                        success: function(res) {
+                            // 以键值对的形式返回，可用的api值true，不可用为false
+                            // 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
+                        }
+                    });
+                },
+                error: function() {
+                    // alert('发生错误，请求数据失败！');
+                }
+            });
+        }, 1000)
+    })
+</script>

@@ -1,0 +1,185 @@
+@charset "UTF-8";
+*{
+		margin: 0;
+		padding: 0;
+	}
+	.payfee1{
+		font-size: 20px;
+	}
+	.icon {
+	    width: 1em;
+	    height: 1em;
+	    vertical-align: -0.15em;
+	    fill: currentColor;
+	    overflow: hidden;
+	}
+	body{
+		background: #f8fafc;
+	}
+	ul li{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
+	.mob_show h1{
+		text-align: center;
+		background: #20518e;
+		font-size: 20px;
+		color:#fff;
+		line-height: 60px;
+		letter-spacing:5px;
+
+	}
+	.mobYes{
+		font-size: 23px;
+		color:#fff;
+		margin-left: 1px;
+		margin-top: 2px;
+
+	}
+	.cart-body {
+	    width: 90%;
+	    margin-top: 20px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-bottom: 74px;
+
+	    border-radius: 8px;
+	    box-sizing: border-box;
+	}
+	.cart-body .cart-body-title {
+		    padding: 10px 12px 25px;
+	    min-height: 66px;
+	    line-height: 24px;
+	    margin-bottom: 40px;
+	    background: #fff;
+	    box-shadow: 0 8px 16px 0 rgba(7,17,27,.1);
+	    border:1px solid #d9dde1;
+	    box-sizing: border-box;
+	    border-radius: 5px;
+	}
+	.cart-body .cart-body-title .trade-title {
+		    height: 46px;
+	    line-height: 30px;
+	    font-size: 18px;
+	    color: #999;
+	}
+	.cart-body .item {
+	    padding: 5px 10px;
+	    border-bottom: 2px solid #fff;
+	}
+	.cart-body .item-left,.cart-body .item-right{
+		padding:0 0 20px 20px;
+	}
+	.cart-body .item-left a{
+		color:#333;
+	}
+	.cart-body .pay-method {
+		
+	    padding: 10px 12px 25px;
+	
+	    
+	    min-height: 66px;
+	    line-height: 24px;
+	    margin-bottom: 40px;
+	    background: #fff;
+	    box-shadow: 0 8px 16px 0 rgba(7,17,27,.1);
+	    border: 1px solid #d9dde1;
+	    box-sizing: border-box;
+	    border-radius: 5px;
+	}
+	.cart-body .pay-method .pay-method-title {
+	    height: 46px;
+	    line-height: 30px;
+	    font-size: 18px;
+	    color: #999;
+	}
+	.cart-body .pay-method .alipay {
+	   		width: 76%;
+	       
+	       display: flex;
+	       align-items: center
+	}
+	.cart-body .pay-method .wxpay {
+	   width: 76%;
+	       
+	       display: flex;
+	       align-items: center
+
+	}
+	.pay-method li{
+		margin:30px 0 30px 0;
+		display: flex;
+		align-items:center;
+	}
+	/* .pay-method .pay-way {
+	    position: relative;
+	    width: 236px;
+	    height: 86px;
+	    cursor: pointer;
+	    background-image: url('../img/pay_s.png');
+	} */
+	.selectDiv{
+		margin-left: 20px;
+		line-height: 86px;
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		border:1px solid #c5c5c5;
+		display: flex;
+		align-items:center;
+	}
+	.selectDiv span{
+		color:#fff;
+		margin-left: 6px;
+		display: none;
+	}
+	.pay-method .js-pay-method .active{
+		background-position: -208px 0;
+	}
+	.pay-method .js-pay-method .active span{
+		display: inline-block;
+	}
+	.pay-summary{
+		position: fixed;
+		bottom:0px;
+		width: 100%;
+	}
+ 	.pay-summary ul{
+		display:flex;
+	}
+	.pay-summary span{
+		color:#61646b;
+	}
+	.pay-summary ul li{
+		color:#fff;
+		line-height: 40px;
+		width: 38%;
+		text-align: center;
+		background: #f01414;
+	}
+	.pay-summary .payfee{
+		color:#a92f17;
+	}
+	.pay-summary ul li:first-child{
+		color:#a92f17;
+		border-top: 1px solid #d9d9d9;
+		background: #fff;
+		padding-left: 10%;
+		width: 62%;
+	}
+.payinfo{
+	color:#666;
+}
+.price{
+	color:#333;
+}
+.greenIcon{
+	position:relative;
+	width:30px;
+	height:30px;
+	background:url(../square/blue.png) no-repeat; 
+	background-position: -150px 0;
+	background-size: 300px 30px;
+}
