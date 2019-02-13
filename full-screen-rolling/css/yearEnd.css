@@ -1,0 +1,746 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: decimal;
+}
+
+.section {
+    position: relative;
+}
+
+.section1 {
+    /* background-image: url("../img/bg3.jpg"); */
+    background-image: url("https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/2019yearEnd/schoolBg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.section2 {
+    /* background-image: url("../img/bg4.jpg"); */
+    background-image: url("https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/2019yearEnd/schoolBg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.section3 {
+    /* background-image: url("../img/bg2.jpg"); */
+    background-image: url("https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/2019yearEnd/schoolBg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.section4 {
+    /* background-image: url("../img/bg2.jpg"); */
+    background-image: url("https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/2019yearEnd/schoolBg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pageOne p {
+    font-size: 23px;
+    color: #1f6cb0;
+    /* background: #f2c46c; */
+    background: #fff;
+    width: 40%;
+    margin: 15px auto;
+    /* position: fixed; */
+    /* left: 24%; */
+    /* bottom: 100px; */
+    padding: 5px 1px 8px;
+    border-radius: 25px;
+    text-align: center;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    box-shadow: 0px 5px 16px #71695969;
+}
+
+.pageOne .intro {
+    text-align: center;
+    /* color: #e6bf7a; */
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.pageOne .img1 {
+    position: fixed;
+    right: 80px;
+    top: 100px;
+    width: 70px;
+}
+
+.pageOne .img2 {
+    position: fixed;
+    left: 290px;
+    bottom: 83px;
+    width: 60px;
+}
+
+.pageOne .img1,
+.pageOne .img2 {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -webkit-animation: rotate 15s linear infinite;
+    -moz-animation: rotate 15s linear infinite;
+    -o-animation: rotate 15s linear infinite;
+    animation: rotate 15s linear infinite;
+}
+
+
+/*花朵旋转*/
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(359deg)
+    }
+}
+
+.title {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.down {
+    position: fixed;
+    bottom: 200px;
+    left: 43%;
+    color: #fff;
+    font-size: 45px !important;
+    animation-iteration-count: infinite;
+    /*执行次数*/
+    -webkit-animation-iteration-count: infinite;
+}
+
+.listOne,
+.listTwo,
+.listThree,
+.listFour,
+.listFive,
+.listSix,
+.listSeven {
+    animation-duration: 2s !important;
+    /*完成动画所用的时间*/
+    -webkit-animation-duration: 2s !important;
+}
+
+.contentThree {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.contentTwo span,
+.contentThree span {
+    text-align: center;
+    padding: 15px 20px;
+    /* color: #fff; */
+    background-color: #fff;
+    color: #1f6cb0;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 10px;
+    width: 47%;
+    font-weight: 500;
+}
+
+.addholder {
+    background-color: #cb8507 !important;
+}
+
+.contentTwo h3,
+.contentThree h3 {
+    /* color: #fcd279; */
+    color: #fff;
+    letter-spacing: 3px;
+    text-align: left;
+    text-indent: 38px;
+}
+
+.listOne {
+    animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+}
+
+.listTwo {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+.listThree {
+    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+}
+
+.listFour {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.listFive {
+    animation-delay: 1.3s;
+    -webkit-animation-delay: 1.3s;
+}
+
+.listSix {
+    animation-delay: 1.6s;
+    -webkit-animation-delay: 1.6s;
+}
+
+.listSeven {
+    animation-delay: 1.9s;
+    -webkit-animation-delay: 1.9s;
+}
+
+.light {
+    -webkit-animation-delay: 1s;
+    position: fixed;
+    right: 22px;
+    top: 98%;
+}
+
+.moveUp {
+    animation: moveUp 5s cubic-bezier(0.3, 0.3, 0.3, 0.3) infinite;
+}
+
+
+/*灯笼上下摆动*/
+
+@keyframes moveUp {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+.card img.lightChild1 {
+    width: 143px;
+    height: 189px;
+}
+
+.card img.lightChild2 {
+    width: 177px;
+    height: 169px;
+    position: fixed;
+    right: -17px;
+    top: 53%;
+    -webkit-animation-delay: 3s !important;
+    animation-duration: 3s !important;
+    /*完成动画所用的时间*/
+    -webkit-animation-duration: 3s !important;
+    -webkit-animation: moveleft 15s linear infinite;
+    -moz-animation: moveleft 15s linear infinite;
+    -o-animation: moveleft 15s linear infinite;
+    animation: moveleft 15s linear infinite;
+}
+
+
+/*灯笼穗左右摆动*/
+
+@keyframes moveleft {
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+}
+
+.pageThree,
+.pageFour,
+.pageFive,
+.pageSix,
+.pageSeven,
+.pageEight,
+.pageNine,
+.pageTen,
+.pageEleven {
+    /* border: 2px solid #e1af55; */
+    height: 95%;
+    width: 90%;
+    margin-left: 4.5%;
+}
+
+.fly .img1 {
+    width: 100px;
+    position: absolute;
+    right: -101px;
+    top: 100px;
+    animation: flyRight 10s linear infinite;
+    -webkit-animation: flyRight 10s linear infinite;
+}
+
+
+/*云飞右*/
+
+@keyframes flyRight {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(-600px);
+    }
+}
+
+.fly .img2 {
+    width: 100px;
+    position: absolute;
+    top: 30px;
+    animation: flyLeft 15s linear infinite;
+    -webkit-animation: flyLeft 15s linear infinite;
+}
+
+
+/*云飞左*/
+
+@keyframes flyLeft {
+    0% {
+        transform: translateX(-200px);
+    }
+    100% {
+        transform: translateX(500px);
+    }
+}
+
+.cardBottom .img1 {
+    width: 150px;
+    position: fixed;
+    left: 0px;
+    -webkit-animation-delay: .3s;
+}
+
+.cardBottom .img2 {
+    width: 150px;
+    position: fixed;
+    right: 0;
+    -webkit-animation-delay: .4s;
+}
+
+.cardBottom .img3 {
+    width: 230px;
+    position: fixed;
+    left: 90px;
+}
+
+.pageThree .cardBottom .img1,
+.pageThree .cardBottom .img2,
+.pageThree .cardBottom .img3 {
+    bottom: -100%;
+}
+
+.pageFour .cardBottom .img1,
+.pageFour .cardBottom .img2,
+.pageFour .cardBottom .img3 {
+    bottom: -200%;
+}
+
+.pageFive .cardBottom .img1,
+.pageFive .cardBottom .img2,
+.pageFive .cardBottom .img3 {
+    bottom: -300%;
+}
+
+.pageSix .cardBottom .img1,
+.pageSix .cardBottom .img2,
+.pageSix .cardBottom .img3 {
+    bottom: -400%;
+}
+
+.pageSeven .cardBottom .img1,
+.pageSeven .cardBottom .img2,
+.pageSeven .cardBottom .img3 {
+    bottom: -500%;
+}
+
+.pageEight .cardBottom .img1,
+.pageEight .cardBottom .img2,
+.pageEight .cardBottom .img3 {
+    bottom: -600%;
+}
+
+.pageNine .cardBottom .img1,
+.pageNine .cardBottom .img2,
+.pageNine .cardBottom .img3 {
+    bottom: -700%;
+}
+
+.pageTen .cardBottom .img1,
+.pageTen .cardBottom .img2,
+.pageTen .cardBottom .img3 {
+    bottom: -800%;
+}
+
+.pageLast .img1 {
+    /* position: fixed; */
+    /* top: 870%; */
+    /* top: 570%; */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -165px;
+    width: 330px;
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation: moveRight 10s linear infinite;
+}
+
+
+/*2019左右摆动*/
+
+@keyframes moveRight {
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+}
+
+.pageLast .img2 {
+    width: 200px;
+    position: absolute;
+    /* position: fixed; */
+    /* bottom: -902%; */
+    /* bottom: -602%; */
+    bottom: 0;
+    right: 0;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.contentFour {
+    /* position: fixed; */
+    /* top: 928%; */
+    /* top: 628%; */
+    padding: 0 28px;
+    text-align: center;
+    /* color: #e1af55; */
+    color: #fff;
+    font-weight: bold;
+}
+
+.contentFour h3 {
+    font-weight: 500;
+}
+
+.contentFour p span.posi1,
+.contentFour p span.posi2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* zwj */
+
+.hideTxt {
+    display: none !important;
+}
+
+.showTxt {
+    display: block !important;
+}
+
+.result {
+    padding: 10px;
+    /* border: 2px solid; */
+    text-align: left;
+    border-radius: 4px;
+    text-indent: 36px;
+    position: relative;
+    z-index: 1;
+}
+
+.showAnswer {
+    color: #fff;
+    line-height: 2;
+    text-align: left;
+    text-indent: 36px;
+}
+
+.anserImg {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    width: 70px;
+}
+
+.mapContent {
+    position: relative;
+    top: 60px;
+}
+
+.map {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.map img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+.shengfen {
+    position: absolute;
+    display: flex !important;
+    align-items: center;
+    width: auto !important;
+    background-color: transparent !important;
+    padding: 1px !important;
+}
+
+.shengfen img {
+    opacity: 0;
+}
+
+.dongbei {
+    right: -31px;
+    top: -41px;
+    z-index: 1;
+}
+
+.huadong {
+    right: 33px;
+    top: 118px;
+}
+
+.huabei {
+    top: -40px;
+    right: 22px;
+}
+
+.huazhong {
+    top: 127px;
+    right: 53px;
+}
+
+.huanan {
+    top: 214px;
+    right: 60px;
+    z-index: 1;
+}
+
+.xinan {
+    top: 106px;
+    left: -1px;
+}
+
+.xibei {
+    top: 0px;
+    left: -20px;
+}
+
+.loading {
+    color: #fff !important;
+}
+
+.imgBox {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgBox img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    width: 80px;
+}
+
+.showTxt01 {
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 1px 5px;
+}
+
+.line {
+    background-color: #03a9f4;
+    border-radius: 20px;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 14px;
+    margin: 15px 30px;
+    position: relative;
+}
+
+.line1 {
+    left: -150px;
+}
+
+.line2 {
+    left: -100px;
+}
+
+.line3 {
+    left: -90px;
+}
+
+.line4 {
+    left: -10px;
+}
+
+.line5 {
+    left: -120px;
+}
+
+.line6 {
+    left: -100px;
+}
+
+.line7 {
+    left: -100px;
+}
+
+.line8 {
+    left: -70px;
+}
+
+.line9 {
+    left: -14px;
+}
+
+.danmuBox {
+    width: 500px;
+    position: relative;
+    top: 75px;
+    left: -400px;
+}
+
+.content02 {
+    display: none;
+}
+#seeMore,#back{
+    border: 1px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+}
+@media (max-width:376px) {
+    .xibei {
+        top: 11px;
+        left: -33px;
+    }
+    .xibei img {
+        width: 226px;
+    }
+    .dongbei {
+        right: -31px;
+        top: -41px;
+    }
+    .huabei {
+        top: -40px;
+        right: 22px;
+    }
+    .huadong {
+        right: 33px;
+        top: 113px;
+    }
+    .huazhong {
+        top: 125px;
+        right: 55px;
+    }
+    .huazhong img {
+        width: 67px;
+    }
+    .huanan {
+        top: 208px;
+        right: 64px;
+    }
+    .huanan img {
+        width: 85px;
+    }
+    .xinan {
+        top: 105px;
+        left: -16px;
+    }
+    .xinan img {
+        width: 200px;
+    }
+    .pageLast .img1 {
+        width: 300px;
+        margin-left: -150px;
+    }
+}
+
+@media (max-width:321px) {
+    .title .intro h1 {
+        font-size: 23px;
+        font-weight: 500;
+    }
+    .title .intro h3 {
+        font-size: 18px;
+    }
+    .title p {
+        font-size: 18px;
+    }
+    .contentThree h3 {
+        font-size: 15px;
+    }
+    .contentThree span {
+        padding: 10px 20px;
+        width: 50%;
+    }
+    .contentThree {
+        margin-top: 100px !important;
+    }
+    .result {
+        font-size: 15px !important;
+    }
+    .contentFour h1 {
+        display: none !important;
+    }
+    .pageLast .img1 {
+        width: 250px;
+        margin-left: -125px;
+    }
+    .pageOne .intro {
+        margin-bottom: 30px;
+    }
+}
