@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VIS2015国际学校发展大会</title>
+    <meta name="keywords" content="新学说,新荷,国际学校,VIS2015国际学校发展大会">
+    <meta name="description" content="VIS2015国际学校发展大会">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/Swiper/4.3.0/css/swiper.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.bootcss.com/video.js/7.0.3/video-js.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_694015_qzy1x730sdf2mx6r.css">
+    <style>
+        .modal-body iframe{
+            width: 100%;
+        }
+        img {
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .plpr0 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        .banner>img {
+            max-height: 900px;
+            width: 100%;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        .swiper-slide img{
+            width: 1140px;
+        }
+        .pt15 {
+            padding-top: 15px;
+        }
+        
+        .mb30 {
+            margin-bottom: 30px;
+        }
+        
+        .pb35 {
+            padding-bottom: 35px;
+        }
+        
+        .header {
+            height: 50px;
+            line-height: 50px;
+        }
+        
+        .header-index {
+            color: #999;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        
+        .header-index:hover {
+            text-decoration: none;
+            color: #666;
+        }
+        /* content */
+        
+        .content-title {
+            color: #666;
+            font-size: 20px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        
+        .fts23 {
+            font-size: 23px;
+        }
+        
+        .content-title:hover {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .content-info {
+            color: #757575;
+            font-size: 17px;
+        }
+        
+        .content-detail {
+            color: #666;
+            position: absolute;
+            right: 15px;
+            /* bottom: 15px; */
+            font-size: 16px;
+        }
+        
+        .timeLine {
+            padding-left: 25px;
+            padding-bottom: 30px;
+            position: relative;
+            border-left: 2px dashed #da90c4;
+            margin-left: 5px;
+        }
+        
+        .timeLine:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 30px;
+        }
+        
+        .timeLine::before {
+            display: block;
+            content: "";
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #a8157d;
+            position: absolute;
+            left: -10px;
+            top: 0;
+            background: #FFF;
+        }
+        
+        .swiper-container {
+            
+        }
+        
+        .footer {
+            padding-bottom: 30px;
+            color: #93999F;
+        }
+        /* .bg {
+            width: 100%;
+            height: 100%;
+            background: url("./img/lotBig09.jpg") no-repeat;
+            background-size: 100%;
+        } */
+        
+        .picFrame {
+            position: relative;
+        }
+        
+        .toPlay {
+            position: absolute;
+            left: 50%;
+            margin-left: -35px;
+            top: 50%;
+            margin-top: -50px;
+            font-size: 70px;
+            color: #e0e0e0;
+            opacity: .9;
+        }
+        
+        iframe {
+            height: 450px;
+        }
+        
+        @media (max-width: 768px) {
+            .banner {
+                display: none;
+            }
+            .header {
+                margin-top: 10px;
+                margin-left: -15px;
+            }
+            .header>a>img {
+                width: 220px;
+            }
+            .header-index {
+                position: absolute;
+                right: 0;
+                font-weight: 700;
+                color: #222;
+                font-size: 23px;
+            }
+            .timeLine {
+                padding-left: 0;
+                padding-bottom: 35px;
+                position: relative;
+                border-left: none;
+                margin-left: -15px;
+            }
+            .timeLine::before {
+                display: none;
+            }
+            .newsM,
+            .autoBanner {
+                margin-bottom: 30px;
+                overflow: hidden;
+                border-radius: 5px;
+                box-shadow: 0 5px 45px #cacaca;
+            }
+            .newsM>.col-md-4 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .newsM .content-title {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                color: #222;
+                font-weight: 700;
+                font-size: 23px;
+            }
+            .newsM .content-info {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                min-height: 70px;
+                max-height: 70px;
+            }
+            .autoBanner>.col-md-12 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .swiper-slide>img {
+                border-radius: 5px;
+            }
+            .swiper-button-white {
+                display: none;
+            }
+            video {
+                border-radius: 5px 5px 0 0;
+                /* vertical-align: top; */
+                border: none;
+                outline: none;
+            }
+            iframe {
+                height: 220px;
+            }
+            .pt15 {
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- 顶部 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header">
+                        <a href="http://www.xinxueshuo.cn/">
+                            <img src="./img/logo.png" alt="" width="150">
+                        </a>
+                        <a href="http://www.xinxueshuo.cn/" class="header-index">首页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="row mb30">
+            <div class="banner">
+                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/vis-old/2015.jpg" alt="">
+            </div>
+        </div>
+        <!-- content -->
+        <div class="container">
+            <div class="row pb35 newsM">
+                <div class="col-md-4">
+                    <a href="https://edu.qq.com/a/20161221/023109.htm"><img src="http://img1.gtimg.com/edu/pics/hv1/68/150/2170/141142568.jpg" alt=""></a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content text-center pt15">
+                        <a target="_" href="https://edu.qq.com/a/20161221/023109.htm" class="content-title fts23">Vanessa Cumbers：国际学校外籍教师招聘的挑战</a>
+                        <p class="content-info text-left">
+                            12月12日，VIS2015国际学校大会在京召开。数据显示，目前中国国际学校快速增长，总数已达到597所，而形式也从单一的输入走向多元化。面对国际化教育时代的降临，新老学校共聚，探索未来发展。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151221/042788.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/36/167/1986/129182271.jpg" alt="">
+                            <span class="iconfont icon-bofang toPlay" data-toggle="modal" data-target="#myModal07"></span>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal07" tabindex="-1" role="dialog" aria-labelledby="myModalLabel07">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel07">2015国际学校报告发布：未来资本会推动行业发展</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=d0019peedpn" allowFullScreen="true"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151215/061730.htm" class="content-title">2015国际学校报告发布：未来资本会推动行业发展</a>
+                        <p class="content-info">
+                            12月12日，VIS2015国际学校大会在京召开。数据显示，目前中国国际学校快速增长，总数已达到597所，而形式也从单一的输入走向多元化。面对国际化教育时代的降临，新老学校共聚，探索未来发展。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151215/061730.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/85/77/1990/129419470.jpg" alt="">
+                            <span class="iconfont icon-bofang toPlay" data-toggle="modal" data-target="#myModal06"></span>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal06" tabindex="-1" role="dialog" aria-labelledby="myModalLabel06">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel06">VIS双语论坛：中国教育中的特色课程设计</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=x0019qnfhxv" allowFullScreen="true"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151221/050001.htm" class="content-title">VIS双语论坛：中国教育中的特色课程设计</a>
+                        <p class="content-info">
+                            12月12日，VIS2015国际学校大会在京召开。数据显示，目前中国国际学校快速增长，总数已达到597所，而形式也从单一的输入走向多元化。面对国际化教育时代的降临，新老学校共聚，探索未来发展。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151221/050001.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/25/54/1990/129413545.jpg" alt="">
+                            <span class="iconfont icon-bofang toPlay" data-toggle="modal" data-target="#myModal05"></span>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal05" tabindex="-1" role="dialog" aria-labelledby="myModalLabel05">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel05">马成：谈国际学校建筑及FFE的投资误区</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=e0019x8pyak" allowFullScreen="true"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151221/044430.htm" class="content-title">马成：谈国际学校建筑及FFE的投资误区</a>
+                        <p class="content-info">
+                           12月12日，VIS2015国际学校大会在京召开。数据显示，目前中国国际学校快速增长，总数已达到597所，而形式也从单一的输入走向多元化。面对国际化教育时代的降临，新老学校共聚，探索未来发展。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151221/044430.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/8/164/1986/129181478.jpg" alt="">
+                            <span class="iconfont icon-bofang toPlay" data-toggle="modal" data-target="#myModal04"></span>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal04" tabindex="-1" role="dialog" aria-labelledby="myModalLabel04">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel04">李娜：Building skills for life with Cambridge</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                       <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=c0019ygnw2y" allowFullScreen="true"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151215/059584.htm" class="content-title">李娜：Building skills for life with Cambridge</a>
+                        <p class="content-info">
+                            谢谢大家！我是剑桥国际考试委员会东北亚区的李娜，今天很荣幸能够在这里跟大家分享一下剑桥国际考试委员会。在我开始主旨演讲之前，我想给大家一些数据。2014年剑桥大学招收了4000名本科录取生，其中有800名是国际学生，有100名是中国学生。牛津大学招收了3000名本科学生，有600名是国际学生，有250名是中国学生。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151215/059584.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <!-- <div class="poster"><span class="iconfont icon-bofang beginPlay"></span></div> -->
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/155/64/1990/129416225.jpg" alt="">
+                            <span class="iconfont icon-bofang toPlay" data-toggle="modal" data-target="#myModal08"></span>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal08" tabindex="-1" role="dialog" aria-labelledby="myModalLabel08">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel08">培生关利星：形成性评价是学习的推动力</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=q0019t30yfm" allowFullScreen="true"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151221/046946.htm" class="content-title">培生关利星：形成性评价是学习的推动力</a>
+                        <p class="content-info">
+                            下午好！我是培生的关利星，我的英文名字叫James。今天我想跟大家分享一下评估。我选择用英文跟大家沟通。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151221/046946.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/167/67/1990/129417002.jpg" alt="">
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151221/047943.htm" class="content-title">付金懋：技术能为国际学校带来什么？</a>
+                        <p class="content-info">
+                            大家在上午和下午已经听了学校无论是教学的方法，还是课程的设置，甚至连学校硬件方面的观点都有介绍，那么接下来我想为大家介绍的是关于学校里的软件。我们想通过这些软件的建设，为学校里的一些服务提供更高效、更贴合人需求的一些功能。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151221/047943.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/201/165/1986/129181926.jpg" alt="">
+                            <span class="iconfont icon-bofang toPlay" data-toggle="modal" data-target="#myModal02"></span>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel02">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel02">华晓杭：国际学校在中国3.0</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=n0019gzjiso" allowFullScreen="true"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151215/060063.htm" class="content-title">华晓杭：国际学校在中国3.0</a>
+                        <p class="content-info">
+                           演讲嘉宾：UWC常熟分校创校校长华晓杭。她毕业于美国UWC，之后在北欧的UWC先后任教近十年，为了将UWC引入中国，她付出了常人难以想象的努力。有请世界联合学院中国国家理事会副理事长、UWC常熟分校创校校长华晓杭女士。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151215/060063.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM mb30">
+                <div class="col-md-4">
+                    <!-- a href="https://mp.weixin.qq.com/s/OpCY-ZDM5pjFeNs20fOEJg" -->
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/195/144/1986/129176565.jpg" alt="">
+                            <span class="iconfont icon-bofang toPlay" data-toggle="modal" data-target="#myModal01"></span>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal01" tabindex="-1" role="dialog" aria-labelledby="myModalLabel01">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel01">Malcolm McKenzie：鼎石，世界学校是怎么炼成的</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=e0019adtyhg" allowFullScreen="true"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151215/052911.htm" class="content-title">Malcolm McKenzie：鼎石，世界学校是怎么炼成的</a>
+                        <p class="content-info">
+                            演讲嘉宾：北京市鼎石学校校长Malcolm Mckenzie：他在美国著名的Hotchkiss学校担任长达28年校长，他来到中国是为了想创立一所自己理想中的世界学校，向世界学习，为世界学习。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151215/052911.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+             <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/245/158/1986/129180185.jpg" alt="">
+                            <span class="iconfont icon-bofang toPlay" data-toggle="modal" data-target="#myModal02"></span>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel02">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel02">徐涛：北京耀中，全球教育下的双语教育</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=d0019813ibd" allowFullScreen="true"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151215/057179.htm" class="content-title"> 徐涛：北京耀中，全球教育下的双语教育</a>
+                        <p class="content-info">
+                            演讲嘉宾：北京耀中国际学校校长徐涛。徐校长于北京耀中创校开始就加入了学校的一线教学工作，2008年起担任中方校长。和很多外籍学校不同，耀中的中文特色很有特色，在香港人眼中耀中就是一所国际化程度最高的本土双语学校。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151215/057179.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+             <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/171/153/1986/129178836.jpg" alt="">
+                            <span class="iconfont icon-bofang toPlay" data-toggle="modal" data-target="#myModal02"></span>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel02">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel02">钱志龙：中国味的国际教育还是国际化的中国教育？</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=y0019tohb0i" allowFullScreen="true"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151215/054818.htm" class="content-title">钱志龙：中国味的国际教育还是国际化的中国教育？</a>
+                        <p class="content-info">
+                            演讲嘉宾：培德书院国际学校总校长钱志龙博士，去年11月份因为一场《熊掌和鱼》的演讲红遍整个国际化教育圈子。钱博士说，他只是以一个学生的身份，以一个教育者的身份亲历了东西方教育20多年的视角，做了一个“略带偏见”的当代中西方教育的比较。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151215/054818.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+             <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/183/34/1987/129213528.jpg" alt="">
+                            <span class="iconfont icon-bofang toPlay" data-toggle="modal" data-target="#myModal02"></span>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel02">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel02">高青：太平洋的中间，国际教育的第三条路</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=b0019svsdk1" allowFullScreen="true"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151216/046163.htm" class="content-title">高青：太平洋的中间，国际教育的第三条路</a>
+                        <p class="content-info">
+                            今天很荣幸代表深圳中学和万科梅沙书院跟大家分享，我分享的题目是“太平洋的中间，国际教育的第三条路”。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151216/046163.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+             <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/207/68/1987/129222222.jpg" alt="">
+                            <span class="iconfont icon-bofang toPlay" data-toggle="modal" data-target="#myModal02"></span>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel02">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel02">杨洋：国际课程给中国学生带来了哪些优势</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=w00197kjdt3" allowFullScreen="true"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151216/048581.htm" class="content-title">杨洋：国际课程给中国学生带来了哪些优势</a>
+                        <p class="content-info">
+                            演讲嘉宾：杨洋，天津惠灵顿国际学校副校长。天津惠灵顿成立于2011年，不但建筑风格与英国惠灵顿完全一致，学校也秉承了英国惠灵顿学校所倡导的八大智能教育理念。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151216/048581.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+             <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/240/43/1990/129410955.jpg" alt="">
+                            <span class="iconfont icon-bofang toPlay" data-toggle="modal" data-target="#myModal02"></span>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel02">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel02">夏谷鸣：学校的围墙将被拆除</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe frameborder="0" src="https://v.qq.com/txp/iframe/player.html?vid=p0019s8taxu" allowFullScreen="true"></iframe>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151221/041704.htm" class="content-title">夏谷鸣：学校的围墙将被拆除</a>
+                        <p class="content-info">
+                           演讲嘉宾：夏谷鸣，夏校长是国家基础教育课程教材专家委员会委员，教育部高中英语(精品课)课程标准修订组核心成员，教育部国培专家库首批专家。浙江省中小学外语(课程)学校会会长。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151221/041704.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+             <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/26/162/1986/129180986.jpg" alt="">
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20151215/057907.htm" class="content-title">VIS2015国际学校发展大会：迎接国际化教育新时代</a>
+                        <p class="content-info">
+                            很难想象，就在12天前我们还在为找一处合适拍摄的场地而奔波于雾霾爆表的北京，今天VIS大会终于成型，离不开在座各位对于我们的支持，非常感谢。我也要感谢我的团队一直坚持办会到今天的信念。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20151215/057907.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb30 autoBanner">
+                <div class="col-md-12">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="http://img1.gtimg.com/edu/pics/hv1/188/47/1982/128891723.jpg" alt="" class="img-responsive"></div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- 如果需要导航按钮 -->
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                        <div class="swiper-button-next swiper-button-white"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer text-center">
+                        <p>Copyright © 2018 NSI. All Rights Reserved</p>
+                        <p>新学说 版权所有</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/Swiper/4.3.0/js/swiper.min.js"></script>
+<!-- <script src="https://cdn.bootcss.com/video.js/7.0.3/video.min.js"></script> -->
+<script>
+    $(function() {
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: {
+                disableOnInteraction: false,
+            },
+            loop: true,
+            spaceBetween: 30,
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    })
+</script>
+<script>
+    function centerModals() {　　
+        $('#myModal01,#myModal02,#myModal03,#myModal04,#myModal05,#myModal06,#myModal07,#myModal08').each(function(i) {　　　　
+            var $clone = $(this).clone().css('display', 'block').appendTo('body');　　　　
+            var top = Math.round(($clone.height() - $clone.find('.modal-content').height()) / 2);　　　　
+            top = top > 0 ? top : 0;　　　　
+            $clone.remove();　　　　
+            $(this).find('.modal-content').css("margin-top", top);　　
+        });
+    };
+    $('#myModal01,#myModal02,#myModal03,#myModal04,#myModal05,#myModal06,#myModal07,#myModal08').on('show.bs.modal', centerModals);
+    //禁用空白处点击关闭
+    $('#myModal01,#myModal02,#myModal03,#myModal04,#myModal05,#myModal06,#myModal07,#myModal08').modal({
+        backdrop: 'static',
+        keyboard: true, //禁止键盘
+        show: false
+    });
+    //页面大小变化是仍然保证模态框水平垂直居中
+    $(window).on('resize', centerModals);
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e898a1b6e73616a0c84313f55a47efd6";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>

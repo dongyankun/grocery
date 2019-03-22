@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>国际学校职能课程再度升级</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_936786_0p9jl7w0resb.css">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e5e5e5 !important;
+            padding-bottom: 50px;
+        }
+        
+        .mt30 {
+            margin-top: 30px;
+        }
+        
+        .mt15 {
+            margin-top: 15px;
+        }
+        
+        .pt10 {
+            padding-top: 10px;
+        }
+        
+        .pb10 {
+            padding-bottom: 10px;
+        }
+        
+        .img {
+            display: inline-block !important;
+        }
+        
+        a,
+        a:hover {
+            text-decoration: none !important;
+        }
+        
+        .clearfix {
+            overflow: auto;
+            zoom: 1;
+        }
+        
+        .bookPic {
+            background-color: lightgray;
+            box-shadow: 0 5px 10px #ccc;
+        }
+        
+        .bookBg {
+            background-color: #FFF;
+        }
+        
+        .bookBox {
+            display: flex;
+            align-items: center;
+        }
+        
+        .bookInfo {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-family: "宋体"
+        }
+        
+        .bookName {
+            font-size: 23px;
+            font-weight: 600;
+        }
+        
+        .bookAuthor {
+            font-size: 15px;
+            color: #ce1515;
+            line-height: 2;
+        }
+        
+        .bookPublishing {
+            color: gray;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+        
+        .bookIntro p {
+            font-size: 14px;
+            color: rgb(152, 152, 152);
+        }
+        
+        .catalogue {
+            font-size: 19px;
+        }
+        
+        .mululogo {
+            font-size: 20px;
+        }
+        
+        .catalogueList {
+            padding-left: 10px;
+            list-style: none;
+        }
+        
+        .catalogueList>li {
+            line-height: 2;
+            padding: 5px 0;
+            font-size: 16px;
+        }
+        
+        .buyBtnBox {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 5px 0 10px #ccc;
+        }
+        
+        .buyBtn {
+            float: left;
+            padding: 10px 0;
+            display: block;
+            width: 50%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .bookPrice {
+            background-color: #FFF;
+            font-size: 21px;
+            color: #e10000;
+        }
+        
+        .bookPrice span {
+            font-size: 20px;
+            display: inline-block;
+            margin-right: 3px;
+        }
+        
+        .toBuy {
+            background-color: #e10000;
+            color: #FFF;
+            font-size: 20px;
+        }
+        
+        .buyLogo {
+            font-size: 20px;
+            display: inline-block;
+            margin-right: 4px;
+        }
+        
+        .bookPrice:hover {
+            color: #e10000;
+        }
+        
+        .toBuy:hover {
+            color: #FFF;
+        }
+        
+        .listTitle {
+            color: #444;
+        }
+        
+        .catalogueList-desc {
+            padding-left: 10px;
+            color: #666;
+            list-style: none;
+        }
+        
+        .listTitle {
+            padding-bottom: 10px;
+            border-bottom: 1px solid lightgrey;
+        }
+        
+        .catalogueList-desc li {
+            font-size: 14px;
+        }
+    </style>
+    <style>
+        .mb0 {
+            margin-bottom: 0 !important;
+        }
+        
+        .ml5mr50 {
+            margin-right: 50px;
+            margin-left: 5px;
+        }
+        
+        .ml60mr10 {
+            margin-left: 60px;
+            margin-right: -10px;
+        }
+        
+        img {
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        body {
+            background-color: #F8FAFC;
+            font-family: "PingFang SC", 微软雅黑, "Microsoft YaHei", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif;
+        }
+        
+        .session {
+            background:#fff;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        
+        .session-02 {
+            padding-top: 100px;
+            width: 100%;
+            height: 555px;
+            background-image: url("./img/section2-bg.png");
+            background-size: 100%;
+        }
+        
+        .session-03 {
+            margin-bottom: 50px;
+        }
+        
+        .session-class {
+            /* margin-top: 70px; */
+            background-image: url("./img/section3-bg.png");
+            background-size: 100% 550px;
+        }
+        
+        .session-04 {
+            padding: 50px 0;
+            background-image: url("./img/section1-bg.png");
+            background-color: #ECF0F6;
+            background-size: 681px 698px;
+            background-position: 2px 30px;
+            background-repeat: repeat;
+        }
+        
+        .question {
+            width: 780px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            background-repeat: no-repeat;
+            background-size: 940px 114px;
+            height: 114px;
+            padding: 30px 0;
+        }
+        
+        .question1 {
+            background-image: url("./img/question1.png");
+        }
+        
+        .question2 {
+            background-image: url("./img/question2.png");
+        }
+        
+        .question3 {
+            background-image: url("./img/question3.png");
+        }
+        
+        .question4 {
+            background-image: url("./img/question4.png");
+        }
+        
+        .question5 {
+            background-image: url("./img/question5.png");
+        }
+        
+        .plr50 {
+            padding: 0 50px;
+        }
+        
+        .question-title>h1,
+        .title {
+            font-weight: bold;
+            font-size: 32px;
+            color: #000;
+            line-height: 48px;
+            text-align: center;
+            margin-bottom: 50px;
+            font-family: "Microsoft YaHei";
+        }
+        
+        .title small {
+            font-size: 18px;
+            color: #1C1F21;
+            line-height: 28px;
+        }
+        
+        .student-question {
+            padding-left: 45px;
+            color: #FFF;
+            font-size: 16px;
+        }
+        
+        .teacher-answer {
+            padding-left: 85px;
+            padding-right: 15px;
+            font-size: 14px;
+            color: #545C63;
+        }
+        
+        .macInfo {
+            padding-top: 50px;
+        }
+        
+        .macInfo>ul>li {
+            margin-bottom: 12px;
+            position: relative;
+            list-style: none;
+            font-size: 16px;
+            line-height: 24px;
+            color: #545C63;
+        }
+        
+        .macInfo>ul>li::before {
+            display: block;
+            position: absolute;
+            content: "";
+            background: #197DE6;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin: 9px 10px 9px 0;
+            left: -15px;
+            top: -1px;
+        }
+        
+        .course-box {
+            margin: 0 auto;
+            position: relative;
+            width: 100%;
+            background: linear-gradient(-45deg, #c6dff8 0%, #6699cc 100%);
+            box-shadow: 0 8px 16px 0 rgba(25, 125, 230, 0.3);
+            border-radius: 8px 8px 8px 8px;
+            padding: 50px 0 40px;
+        }
+        
+        .course-info {
+            color: #FFF;
+            font-size: 14px;
+            background: #679acd;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        
+        .course-info ul {
+            margin-top: 10px;
+        }
+        
+        .course-info li {
+            margin-bottom: 12px;
+        }
+        
+        .info-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #FFFFFF;
+            line-height: 20px;
+            /* margin: 25px 0 0 0; */
+            position: relative;
+        }
+        /* .info-title::before {
+            position: absolute;
+            display: block;
+            content: "";
+            width: 2px;
+            height: 20px;
+            background: #5a83ac;
+            right: -30px;
+        } */
+        
+        .toApply {
+            position: relative;
+            appearance: none;
+            background: #f72359;
+            padding: 15px 100px;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            outline: none;
+            overflow: hidden;
+            border-radius: 100px;
+        }
+        
+        .toApply:focus,
+        .toApply:hover {
+            color: #FFF;
+        }
+        
+        .toApply span {
+            position: relative;
+        }
+        
+        .toApply::before {
+            --size: 0;
+            content: '';
+            position: absolute;
+            left: var(--x);
+            top: var(--y);
+            width: var(--size);
+            height: var(--size);
+            background: radial-gradient(circle closest-side, #1539db, transparent);
+            transform: translate(-50%, -50%);
+            transition: width .2s ease, height .2s ease;
+        }
+        
+        .toApply:hover::before {
+            color: #FFF;
+            --size: 400px;
+        }
+        
+        .iconlogo {
+            font-size: 22px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        
+        .college p::before {
+            background: #259c7d;
+        }
+        
+        .college .course-box {
+            background: linear-gradient(-45deg, #49d8b5 0%, #54efb3 100%);
+            box-shadow: 0 8px 16px 0 rgb(133, 216, 195);
+        }
+        
+        .college02 .course-box {
+            background: linear-gradient(-45deg, #d8b749 0%, #efdf54 100%);
+            box-shadow: 0 8px 16px 0 rgb(216, 210, 133);
+        }
+        
+        .college .course-info {
+            background: #2cc89f;
+        }
+        
+        .college02 .course-info {
+            background: #b1a82d;
+        }
+        
+        .verticalCenter {
+            height: 100%;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: center!important;
+            justify-content: center!important;
+            -ms-flex-align: center!important;
+            align-items: center!important;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+        
+        .flexHeight01 {
+            height: 74px;
+        }
+        
+        .flexHeight02 {
+            height: 106px;
+        }
+        
+        .flexHeight03,
+        .flexHeight08 {
+            height: 170px;
+        }
+        
+        .flexHeight04,
+        .flexHeight05,
+        .flexHeight07 {
+            height: 138px;
+        }
+        
+        .flexHeight06 {
+            height: 202px;
+        }
+        
+        .flexHeight09 {
+            height: 74px;
+        }
+        
+        .classInfo-title {
+            font-weight: 700;
+            font-size: 30px;
+            color: #fff;
+            margin-bottom: 30px;
+            text-shadow: 0 4px 8px rgba(7, 17, 27, 0.4);
+        }
+        
+        .classInfo {
+            font-size: 22px;
+            padding: 0 20px;
+            color: #FFF;
+            line-height: 2;
+            margin-bottom: 30px;
+            text-shadow: 0 4px 8px rgba(7, 17, 27, 0.4);
+        }
+        
+        @media (max-width: 789px) {
+            .flexHeight01,
+            .flexHeight02,
+            .flexHeight03,
+            .flexHeight04,
+            .flexHeight05,
+            .flexHeight06,
+            .flexHeight07,
+            .flexHeight08,
+            .flexHeight09 {
+                height: auto;
+            }
+            .session-01>img {
+                height: 200px;
+            }
+            .session-class {
+                margin-top: 0;
+            }
+            .session-02 {
+                height: auto;
+            }
+            .question {
+                width: auto;
+                background-size: 100%;
+                padding: 10px 0;
+                height: 51px;
+            }
+            .question-title>h1 {
+                margin-bottom: 30px;
+            }
+            .teacher-answer {
+                padding-left: 15px;
+            }
+            .macInfo {
+                padding-left: 20px;
+            }
+            .tobuy {
+                padding: 0
+            }
+            .price {
+                display: none;
+            }
+            .info-title {
+                margin: auto;
+            }
+            .course-info {
+                margin: 0 20px 10px;
+            }
+            .info-title::before {
+                display: none;
+            }
+            .session-04 {
+                display: none;
+            }
+            .classInfo-title {
+                margin-top: 15px;
+                font-size: 25px;
+            }
+            .classInfo {
+                font-size: 18px;
+            }
+            .course-box img {
+                width: 250px;
+            }
+            .title {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img width="100%" src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-class/2019courseSignup/info.jpg" height="3580" alt="" class="img-responsive">
+    </div>
+    <!-- <div class="session session-class" id="session-class">
+        <div class="container college" id="ccc">
+            <h1 class="title mb0">大学升学指导</h1>
+            <h2 class="title text-center"><small>大学升学，是规划，是成长塑造的过程</small></h2>
+        </div>
+        <div class="container college college02" id="teacher">
+
+        </div>
+    </div>
+    <div>
+        <img src="img/1.png" height="2523" width="100%" alt="">
+    </div> -->
+    <!-- <div class="session session-class" id="session-class">
+        <div class="container college" id="ccc">
+            <h1 class="title mb0">大学升学指导</h1>
+            <h2 class="title text-center"><small>大学升学，是规划，是成长塑造的过程</small></h2>
+            <div class="col-md-12">
+                <div class="course-box">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="course-info ml60mr10">
+                                <div class="row">
+                                    <div class="col-md-4 verticalCenter flexHeight05">
+                                        <p class="text-center info-title">基本知识与工具介绍</p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <ul>
+                                            <li>● 美国的教育体制及大学招生政策和流程</li>
+                                            <li>● 英国的教育体制及大学招生政策和流程</li>
+                                            <li>● 加澳欧洲的教育体制及市场招生政策和流程</li>
+                                            <li>● 大学申请工作中的工具使用</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-info ml60mr10">
+                                <div class="row">
+                                    <div class="col-md-4 verticalCenter flexHeight06">
+                                        <p class="text-center info-title">如何为学生量身定制申请方案</p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <ul>
+                                            <li>● 如何写好推荐信</li>
+                                            <li>● 升学规范的节奏把控，指定目标清单</li>
+                                            <li>● 如何根据学生实际情况策划学术和非学术经历</li>
+                                            <li>● 如何在面试和文书中更好的表达自己</li>
+                                            <li>● 后升学申请阶段的规划</li>
+                                            <li>● 学生参考及标化考试的准备</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-info ml60mr10">
+                                <div class="row">
+                                    <div class="col-md-4 verticalCenter flexHeight07">
+                                        <p class="text-center info-title">升学办公室的工作</p>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <ul>
+                                            <li>● 升学指导办公室的工作规划</li>
+                                            <li>● 如何建立与国外大学的沟通机制</li>
+                                            <li>● 与海外机构组织建立深厚的合作关系</li>
+                                            <li>● 咨询办公室的对外宣传和相关室内设计</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="text-center classInfo-title">课程简介</h3>
+                                    <p class="classInfo">
+                                        在这样的大学升学体系中，学校有一个关键角色是升学顾问。如何跟学生和家庭进行沟通，了解不同特色的家庭教育资源和家庭背景、意愿，为他们量身订做个性化方案，使他们了解学校的课程和资源，规划时间。
+                                    </p>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <img src="./img/ccc.png" alt="" width="350">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container college college02" id="teacher">
+
+        </div>
+    </div> -->
+    <div class="buyBtnBox clearfix">
+        <a href="javascript:;" class="bookPrice text-center buyBtn"><span>¥</span>4200.00</a>
+        <a href="./apply.html" class="toBuy text-center buyBtn"><span class="iconfont icon-Shapecopy buyLogo"></span>立即购买</a>
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script src="./js/wexinShare01.js"></script>
+<script>
+    weixinShare('国际学校职能课程再度升级', '2019新篇章开启，升学指导全攻略速来围观！', 'https://data.xinxueshuo.cn/upImage/upInstitutionImg/100062/100062-logo.jpg')
+</script>

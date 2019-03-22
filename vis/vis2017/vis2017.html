@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2017VIS国际学校发展大会</title>
+    <meta name="keywords" content="2017VIS国际学校发展大会">
+    <meta name="description" content="2017VIS国际学校发展大会">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/Swiper/4.3.0/css/swiper.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.bootcss.com/video.js/7.0.3/video-js.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_694015_qzy1x730sdf2mx6r.css">
+    <style>
+        img {
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .plpr0 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        
+        .banner>img {
+            max-height: 600px;
+            width: 100%;
+        }
+        
+        a:hover {
+            text-decoration: none;
+        }
+        
+        .pt15 {
+            padding-top: 15px;
+        }
+        
+        .mb30 {
+            margin-bottom: 30px;
+        }
+        
+        .pb35 {
+            padding-bottom: 35px;
+        }
+        
+        .header {
+            height: 50px;
+            line-height: 50px;
+        }
+        
+        .header-index {
+            color: #999;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        
+        .header-index:hover {
+            text-decoration: none;
+            color: #666;
+        }
+        /* content */
+        
+        .content-title {
+            color: #666;
+            font-size: 20px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        
+        .fts23 {
+            font-size: 23px;
+        }
+        
+        .content-title:hover {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .content-info {
+            color: #757575;
+            font-size: 17px;
+        }
+        
+        .content-detail {
+            color: #666;
+            position: absolute;
+            right: 15px;
+            /* bottom: 15px; */
+            font-size: 16px;
+        }
+        
+        .timeLine {
+            padding-left: 25px;
+            padding-bottom: 30px;
+            position: relative;
+            border-left: 2px dashed #da90c4;
+            margin-left: 5px;
+        }
+        
+        .timeLine:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 30px;
+        }
+        
+        .timeLine::before {
+            display: block;
+            content: "";
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #a8157d;
+            position: absolute;
+            left: -10px;
+            top: 0;
+            background: #FFF;
+        }
+        
+        .swiper-container {
+            max-height: 600px;
+        }
+        
+        .footer {
+            padding-bottom: 30px;
+            color: #93999F;
+        }
+        /* .bg {
+            width: 100%;
+            height: 100%;
+            background: url("./img/lotBig09.jpg") no-repeat;
+            background-size: 100%;
+        } */
+        
+        .picFrame {
+            position: relative;
+        }
+        
+        .toPlay {
+            position: absolute;
+            left: 50%;
+            margin-left: -35px;
+            top: 50%;
+            margin-top: -50px;
+            font-size: 70px;
+            color: #e0e0e0;
+            opacity: .9;
+        }
+        
+        iframe {
+            height: 450px;
+        }
+        
+        @media (max-width: 768px) {
+            .banner {
+                display: none;
+            }
+            .header {
+                margin-top: 10px;
+                margin-left: -15px;
+            }
+            .header>a>img {
+                width: 220px;
+            }
+            .header-index {
+                position: absolute;
+                right: 0;
+                font-weight: 700;
+                color: #222;
+                font-size: 23px;
+            }
+            .timeLine {
+                padding-left: 0;
+                padding-bottom: 35px;
+                position: relative;
+                border-left: none;
+                margin-left: -15px;
+            }
+            .timeLine::before {
+                display: none;
+            }
+            .newsM,
+            .autoBanner {
+                margin-bottom: 30px;
+                overflow: hidden;
+                border-radius: 5px;
+                box-shadow: 0 5px 45px #cacaca;
+            }
+            .newsM>.col-md-4 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .newsM .content-title {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                color: #222;
+                font-weight: 700;
+                font-size: 23px;
+            }
+            .newsM .content-info {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                min-height: 70px;
+                max-height: 70px;
+            }
+            .autoBanner>.col-md-12 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .swiper-slide>img {
+                border-radius: 5px;
+            }
+            .swiper-button-white {
+                display: none;
+            }
+            video {
+                border-radius: 5px 5px 0 0;
+                /* vertical-align: top; */
+                border: none;
+                outline: none;
+            }
+            iframe {
+                height: 220px;
+            }
+            .pt15 {
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- 顶部 -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header">
+                        <a href="http://www.xinxueshuo.cn/">
+                            <img src="./img/logo.png" alt="" width="150">
+                        </a>
+                        <a href="http://www.xinxueshuo.cn/" class="header-index">首页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="row mb30">
+            <div class="banner">
+                <img src="https://nsi.oss-cn-zhangjiakou.aliyuncs.com/nsi-event/vis-old/2017.jpg" alt="">
+            </div>
+        </div>
+        <!-- content -->
+        <div class="container">
+            <div class="row pb35 newsM">
+                <div class="col-md-4">
+                    <a href="http://view.inews.qq.com/a/20171124A0IMG700"><img src="http://inews.gtimg.com/newsapp_bt/0/2344806269/641" alt=""></a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content text-center pt15">
+                        <a target="_" href="http://view.inews.qq.com/a/20171124A0IMG700" class="content-title fts23">哪条才是中外教师管理与融合之道？资深校长这样说</a>
+                        <p class="content-info text-left">
+                            由新学说、腾讯网、腾讯教育联合主办的“聚力同行 为梦想赋能”——2017国际学校发展大会已于11月12日正式落下帷幕。共有30余位演讲嘉宾、近400多位国际学校行业人员参与本次大会。
+                        </p>
+                        <a target="_" href="http://view.inews.qq.com/a/20171124A0IMG700" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://inews.gtimg.com/newsapp_bt/0/2298235780/641" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="http://view.inews.qq.com/a/20171115A0IB7200" class="content-title">新学说联合创始人CEO吴越：未来将是民办国际化学校的天下</a>
+                        <p class="content-info">
+                            以前我们看国际学校，都觉得只有外籍人员子女学校才配用国际学校的称呼。但是，我们应该从更大局的角度去看。国际学校是一个修饰语，从国际角度来看，未来的民办国际学校通过自己的改变、创新、提升，将自己打造成中国最有竞争力的学校品牌，或最优质的教育内容。
+                        </p>
+                        <a target="_" href="http://view.inews.qq.com/a/20171115A0IB7200" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://inews.gtimg.com/newsapp_bt/0/2624735269/641" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20180103/014168.htm" class="content-title">清华附中校长王殿军：国际学校热现象的冷思考</a>
+                        <p class="content-info">
+                            国际学校不断增长，导致外籍教师成为稀缺资源。做好国际学校不能互相挖墙脚，行业的发展需要自律、自治。构建学校命运共同体，互相珍视、互相尊重、互相帮助。因此，关注国家政策、避免恶性竞争，资源分享、人员共享、提倡共同研究，解决共性问题才能助力国际学校行业的稳健发展。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20180103/014168.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://inews.gtimg.com/newsapp_bt/0/2369908585/640" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="http://view.inews.qq.com/a/20171128A0I6C100" class="content-title">苏州海归人才子女学校孙月梅：IB与中国小学课程的融合</a>
+                        <p class="content-info">
+                            IB超学科学习是整体化学习，整体化学习有什么好处？让我们的孩子，从小就学会用不同的方法解决问题，这就是综合式学习。IB越往上超学科是逐渐加多的。中国的课程是按部就班的学习，IB里面常常根据需要模块式学习，让孩子有一个完整的知识体系。
+                        </p>
+                        <a target="_" href="http://view.inews.qq.com/a/20171128A0I6C100" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://inews.gtimg.com/newsapp_bt/0/2293049577/641" alt="">
+                            
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="http://view.inews.qq.com/a/20171114A0HLG700" class="content-title">中黄国际教育集团总校长崔建社：如何在本土教育环境中实施 IB 项目</a>
+                        <p class="content-info">
+                            IB于1991年进入中国，作为一种超越文化、背景、意识形态、语言、宗教等跨国家的国际化教育品牌，受到了包括中国在内150多个国家的青睐。IB领先教育模式给我们提供更多教育改革发展值得借鉴经验。特别是素质教育，全人教育方面。
+                        </p>
+                        <a target="_" href="http://view.inews.qq.com/a/20171114A0HLG700" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <!-- <div class="poster"><span class="iconfont icon-bofang beginPlay"></span></div> -->
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://inews.gtimg.com/newsapp_bt/0/2307910679/641" alt="">
+                        </div>
+                        
+
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="http://view.inews.qq.com/a/20171117A0FVCX00" class="content-title">庄胜利：国际教育的素质教育——校本课程的规划和实施</a>
+                        <p class="content-info">
+                            国际学校在中国发展很久，很多学校呈井喷式成长。可是你会发现一点，新成立的国际学校其实他们的课程日趋同质化，越来越差不多，这种趋势会越来越明显。如果我们想要把学校的特色办好，在同质化的课程中，我相信校本课程会是一个品牌。
+                        </p>
+                        <a target="_" href="http://view.inews.qq.com/a/20171117A0FVCX00" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://inews.gtimg.com/newsapp_bt/0/2319670854/640" alt="">
+                            
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="http://view.inews.qq.com/a/20171120A0D4ZU00" class="content-title">上海光华学院剑桥国际中心校长雷冬冬：国际高中校长核心领导力建设</a>
+                        <p class="content-info">
+                            中国教育一直没有停止改革的步伐。作为国际课程学校，通过对中国学生实施一些西方课程体系的教学，观察学生们在国际课程体系里的成长，反思中国教育今后的改革方向，到底应该朝何方向改进。
+                        </p>
+                        <a target="_" href="http://view.inews.qq.com/a/20171120A0D4ZU00" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://inews.gtimg.com/newsapp_bt/0/2312353522/641" alt="">
+                            
+                        </div>
+                       
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="http://view.inews.qq.com/a/20171118A0CNU600" class="content-title">博实乐教育集团市场部总监吴峥：品牌+招生如何相得益彰</a>
+                        <p class="content-info">
+                            家长选择学校的根本是教育教学，学校的服务根本也是教育教学。学校做好教育教学，就是很好的招生策略，产品够硬，自能基业常青。
+                        </p>
+                        <a target="_" href="http://view.inews.qq.com/a/20171118A0CNU600" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM mb30">
+                <div class="col-md-4">
+                    <!-- a href="https://mp.weixin.qq.com/s/OpCY-ZDM5pjFeNs20fOEJg" -->
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://inews.gtimg.com/newsapp_bt/0/2624531893/641" alt="">
+                            
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20180103/013460.htm" class="content-title">广东碧桂园学校执行校长吴志弘：全球视野，领袖格局</a>
+                        <p class="content-info">
+                           传统应试教育的课程设置主要把资源用在5%的顶尖学生上。可是这样做以后，95%的学生，便失去了学习兴趣。未来要改变中国的，不见得是5%的顶尖学生，却很有可能存在于另外95%的学生当中。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20180103/013460.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://inews.gtimg.com/newsapp_bt/0/2624573434/641" alt="">
+                            
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20180103/013626.htm" class="content-title">苏州枫华学校王文：从零距离美国课堂到本土国际教育</a>
+                        <p class="content-info">
+                            中西方教育观点不一样，西方教育是建立在古希腊这样一个教育体系，苏格拉底认为教育者一个终极目标是把学生的学习潜能激发出来，那么教育就是成功的。而我们中国教育老师是权威，注重知识传授，如果学生把老师的品质都模仿到，那么教育就是成功了。我觉得这个是一个比较大的区别。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20180103/013626.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://img1.gtimg.com/edu/pics/hv1/227/73/2258/146845292.jpg" alt="">
+                            
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20180103/013876.htm" class="content-title">杭外名师：利用现代工具帮助学生实现IGCSE课程过渡</a>
+                        <p class="content-info">
+                            通过专门的观察和研究发现，针对教学大纲，学生在阅读、对个别词汇的解析以及一些词语在特定语境中的意思方面有一定学习困难，这些困难导致学生写作时无法用流畅地使用语言。在第一语言方面出现这些问题，导致在写作过程中无法使用更多样的词汇取得RCE方面的好成绩。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20180103/013876.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://inews.gtimg.com/newsapp_bt/0/2624668497/641" alt="">
+                            
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20180103/014013.htm" class="content-title">上海惠立学校周淑群：融合中西教育精髓促进合作教学</a>
+                        <p class="content-info">
+                            在做融合课程时，简单说“要取东西方之长”，落到实处是考虑如何全方位地融合，包括课程理念、目标、结构、标准、教学资源以及课程实施、管理、评价和保障等等。加入惠立之后，我亲身感受到英国传统模式下的课程跟中国课程具有极强的可融合性，相较于与美国课程的融合，它的难度会更小。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20180103/014013.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://inews.gtimg.com/newsapp_bt/0/2624708580/641" alt="">
+                            
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20180103/014124.htm" class="content-title">上海西外外国语学校林敏：中国国际化课程的再思考</a>
+                        <p class="content-info">
+                            我们国际化课程，因教育对象是中国学生，所以不能关起门来做教育，原汁原味的西方课程虽好，但因为你的学生、老师、管理体制，校门外的家庭、社会不是一个北美欧洲系统，我们的社会及教育生态和国际教育未来发展是息息相关的，我们就课程来论课程是不够的。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20180103/014124.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://inews.gtimg.com/newsapp_bt/0/2624761242/641" alt="">
+                            
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20180103/014242.htm" class="content-title">上海协和教育集团卢慧文：课程教学中的中外协同管理</a>
+                        <p class="content-info">
+                            从未来发展的走向来看，中国要逐步走向国际舞台的中央，要深度参与全球治理，拥有国际化视野的人才是社会所需。无论从历史发展看还是从未来发展看，中外协同管理都是未来融合性学校的发展方向。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20180103/014242.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row timeLine newsM">
+                <div class="col-md-4">
+                    <a href="javascript:;">
+                        <div class="picFrame">
+                            <img src="http://inews.gtimg.com/newsapp_bt/0/2624478237/641" alt="">
+                            
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="col-md-8">
+                    <div class="content">
+                        <a target="_" href="https://edu.qq.com/a/20180103/013235.htm" class="content-title">国际文凭组织PYP资深教师黎艳娟：幼儿灵动空间</a>
+                        <p class="content-info">
+                            环境为何要称为灵动的空间？环境是幼儿的第三方教师，除此之外还有更多的含义。环境不应该仅仅局限于课室。除物质环境外更应该要考虑的社交、情感和人文的环境。我们先做一个破冰游戏，思考环境要考虑哪些要素。创造灵动的空间要遵守哪些原则。
+                        </p>
+                        <a target="_" href="https://edu.qq.com/a/20180103/013235.htm" class="content-detail"><span class="iconfont icon-qunfengshangjiaxiangqing detail"></span>&nbsp;查看详情</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row mb30 autoBanner">
+                <div class="col-md-12">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/banner01.jpg" alt="" class="img-responsive"></div>
+                            <div class="swiper-slide"><img src="./img/banner02.jpg" alt="" class="img-responsive"></div>
+                            <div class="swiper-slide"><img src="./img/banner03.jpg" alt="" class="img-responsive"></div>
+                            <div class="swiper-slide"><img src="./img/banner04.jpg" alt="" class="img-responsive"></div>
+                            <div class="swiper-slide"><img src="./img/banner05.jpg" alt="" class="img-responsive"></div>
+                        </div>
+                        
+                        <div class="swiper-pagination"></div>
+
+                        
+                        <div class="swiper-button-prev swiper-button-white"></div>
+                        <div class="swiper-button-next swiper-button-white"></div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer text-center">
+                        <p>Copyright © 2018 NSI. All Rights Reserved</p>
+                        <p>新学说 版权所有</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/Swiper/4.3.0/js/swiper.min.js"></script>
+<!-- <script src="https://cdn.bootcss.com/video.js/7.0.3/video.min.js"></script> -->
+<script>
+    $(function() {
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: {
+                disableOnInteraction: false,
+            },
+            loop: true,
+            spaceBetween: 30,
+            effect: 'fade',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    })
+</script>
+<script>
+    function centerModals() {　　
+        $('#myModal01,#myModal02,#myModal03,#myModal04,#myModal05,#myModal06,#myModal07,#myModal08').each(function(i) {　　　　
+            var $clone = $(this).clone().css('display', 'block').appendTo('body');　　　　
+            var top = Math.round(($clone.height() - $clone.find('.modal-content').height()) / 2);　　　　
+            top = top > 0 ? top : 0;　　　　
+            $clone.remove();　　　　
+            $(this).find('.modal-content').css("margin-top", top);　　
+        });
+    };
+    $('#myModal01,#myModal02,#myModal03,#myModal04,#myModal05,#myModal06,#myModal07,#myModal08').on('show.bs.modal', centerModals);
+    //禁用空白处点击关闭
+    $('#myModal01,#myModal02,#myModal03,#myModal04,#myModal05,#myModal06,#myModal07,#myModal08').modal({
+        backdrop: 'static',
+        keyboard: true, //禁止键盘
+        show: false
+    });
+    //页面大小变化是仍然保证模态框水平垂直居中
+    $(window).on('resize', centerModals);
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?e898a1b6e73616a0c84313f55a47efd6";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
