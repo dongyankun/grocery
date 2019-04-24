@@ -1,0 +1,31 @@
+<!doctype html>
+    <head>
+        <meta charset=utf-8>
+        <title>音频转换——测试</title>
+        <link rel="stylesheet" type="text/css" href="./css/audio.css">
+    </head>
+    <body>
+        <!-- <form action="http://192.168.0.26:8080/nsi-1.0/manager/talent/upload.do" method="post" enctype="multipart/form-data"> -->
+        <form id="upload" method="post">
+            <input type="file" name="file" class="intBtn">
+            <!-- <input type="submit" value="上传" class="suBtn"> -->
+
+            <div class="progress">
+                <div class="bar"></div>
+                <div class="percent">Loading...</div>
+            </div>
+            <input type="submit" value="上传" class="suBtn">
+        </form>
+
+        <!-- <div class="progress">
+            <div class="bar"></div>
+            <div class="percent">Loading...</div>
+        </div> -->
+        <div id="status"></div>
+
+        <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+        <script type="text/javascript" src="./js/audio.js"></script>
+    </body>
+</html>
+

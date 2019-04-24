@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="container">
+  <web-view src="{{web_src}}#wechat_redirect" />
+</view>
+</view>

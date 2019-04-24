@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="container">
+  <web-view src="{{share_src}}"></web-view>
+</view>
+</view>

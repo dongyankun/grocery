@@ -1,0 +1,40 @@
+body { 
+	padding: 30px 
+}
+form { 
+	display: block; 
+	margin: 20px auto; 
+	background: rgba(238, 238, 238, 1); 
+	border-radius: 10px; 
+	padding: 15px 
+}
+.intBtn{
+	width: 30%;
+}
+.progress { 
+	position:relative; 
+	float: right;
+	width:50%; 
+	border: 1px solid rgba(222, 222, 222, 1); 
+	padding: 1px; 
+	border-radius: 10px;
+	right: 15%; 
+}
+.bar {
+	background-color: rgba(109,157,165,0.72); 
+	width:0%; 
+	height:20px; 
+	border-radius: 8px; 
+}
+.percent { 
+	position:absolute; 
+	display:inline-block;
+	top:0; 
+	left:45%; 
+}
+.suBtn{
+	display: block;
+	position: relative;
+	float: right;
+	right: -50%;
+}
