@@ -1,5 +1,5 @@
 1.格式工厂将视频转音频,选mp3,采样率16000,声道单声道
-2.将视频上传,返回一个地址:
+2.将音频上传,返回一个地址:
 3.转文字
 	3.1获取任务id：https://www.xinxueshuo.top/cs/AudioRecognition/AliyunAudio_GetLink?link=https://nsi.oss-cn-zhangjiakou.aliyuncs.com/test/testAudio/01.mp3
 	3.2查询任务完成度：https://www.xinxueshuo.top/cs/AudioRecognition/AliyunAudio_Query?TaskId=cc84c626470611e980e7e50485e854a3
